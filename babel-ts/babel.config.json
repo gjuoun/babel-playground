@@ -1,0 +1,9 @@
+{
+  "presets": [
+    "@babel/preset-typescript"
+  ],
+  "targets": {
+    "esmodules": true,
+    "browsers": "last 2 versions"
+  }
+}
