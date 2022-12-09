@@ -3,7 +3,10 @@
     [
       "@babel/preset-react",
       {
-        "runtime": "automatic" // set `automatic` to use the new jsx transform
+        "throwIfNamespace": false,
+        "runtime": "automatic",
+        "importSource": "theme-ui",
+        "development": false
       }
     ],
     [
@@ -18,4 +21,5 @@
     "esmodules": true,
     "browsers": "last 2 versions"
   }
+  // "plugins": ["@emotion/babel-plugin"]
 }

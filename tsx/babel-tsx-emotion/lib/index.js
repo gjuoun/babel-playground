@@ -1,5 +1,13 @@
-import React from 'react';
-import { Component } from './module';
+import React from "react";
+import { Component } from "./module";
+import { jsx as _jsx } from "@emotion/react/jsx-runtime";
+import { jsxs as _jsxs } from "@emotion/react/jsx-runtime";
 export const App = () => {
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Hello World"), /*#__PURE__*/React.createElement(Component, null));
+  return _jsxs("div", {
+    children: [_jsx("h1", {
+      children: "Hello World"
+    }), _jsx(Component, {
+      children: "this is my component"
+    })]
+  });
 };

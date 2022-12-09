@@ -1,6 +1,14 @@
 {
   "presets": [
-    "@babel/preset-react",
+    [
+      "@babel/preset-react",
+      {
+        "throwIfNamespace": false,
+        "runtime": "automatic",
+        "importSource": "@emotion/react",
+        "development": false
+      }
+    ],
     [
       "@babel/preset-typescript",
       {
@@ -12,5 +20,6 @@
   "targets": {
     "esmodules": true,
     "browsers": "last 2 versions"
-  }
+  },
+  "plugins": ["@emotion/babel-plugin"]
 }
